@@ -1,9 +1,14 @@
 var palindrome = function(str) {
 
-    // var strArray = str.split('');
-    // var reversedArray = strArray.reverse();
-    // var reversedStr = reversedArray.join('');
+    // could be refactor as such:
+    // return str.split('').reverse().join('');
 
-    return str.split('').reverse().join('');
+    var strArray = str.split('');
+    var reversedArray = strArray.reverse();
+    var reversedStr = reversedArray.join('');
+
+    return reversedStr === str;
+
+
 
 }
